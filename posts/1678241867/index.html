@@ -19,7 +19,7 @@
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#0B91D2">
+<meta name="theme-color" content="#00cccc">
 
 
 
@@ -61,7 +61,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.1.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#0B91D2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#00cccc">
 
 
 
@@ -109,7 +109,7 @@
 <meta property="og:site_name" content="花自绰约 藤自窈窕">
 <meta property="og:description" content="写在前面：  教程目标：完成博客的搭建，并发表一篇文章。 适用人群：知道自己要做什么，乐于学习，只想要一篇实用教程之人。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-25T10:29:58.776Z">
+<meta property="og:updated_time" content="2019-05-25T15:38:29.739Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Github Pages 搭建个人博客（基础篇）">
 <meta name="twitter:description" content="写在前面：  教程目标：完成博客的搭建，并发表一篇文章。 适用人群：知道自己要做什么，乐于学习，只想要一篇实用教程之人。">
@@ -378,7 +378,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019.5.25 18:29:58" itemprop="dateModified" datetime="2019-05-25T18:29:58+08:00">2019.5.25</time>
+                <time title="修改时间：2019.5.25 23:38:29" itemprop="dateModified" datetime="2019-05-25T23:38:29+08:00">2019.5.25</time>
               
             
           </span>
@@ -406,7 +406,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.3k</span>
+                <span title="本文字数">3.4k</span>
               
 
               
@@ -444,10 +444,13 @@
 <li><p>版本控制工具：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">Git —— Github镜像下载</a></p>
 </li>
 <li><p>静态网页生成器：Hexo —— 在任意命令行(Cmd、PowerShell 或 Git Bash)中输入：</p>
-<pre><code>$ cnpm install -g hexo-cli</code></pre><blockquote>
+  <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p><code>cnpm</code> 是从淘宝镜像源进行包管理的指令，用以替代速度极慢的官方的 <code>npm</code>。后续需要运行的一切 <code>npm</code> 指令都可以替换为 <code>cnpm</code>。如果没有，可以运行以下命令安装：</p>
+  <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">npm</span> install -g cnpm --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</span><br></pre></td></tr></table></figure>
 </blockquote>
-<pre><code>$ npm install -g cnpm --registry=https://registry.npm.taobao.org</code></pre></li>
+</li>
 </ul>
 <h1 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 Github</h1><h2 id="启用-Github-Pages"><a href="#启用-Github-Pages" class="headerlink" title="启用 Github Pages"></a>启用 Github Pages</h2><ol>
 <li>登陆 <a href="https://github.com/" target="_blank" rel="noopener">Github</a>。</li>
@@ -462,9 +465,9 @@
 </ol>
 <h2 id="关联-Git-与-Github"><a href="#关联-Git-与-Github" class="headerlink" title="关联 Git 与 Github"></a>关联 Git 与 Github</h2><ol>
 <li><p>在任意位置右键，选择 Git Bush Here，依次输入如下命令：</p>
-<pre><code>$ git config --global user.name &quot;你的GitHub用户名&quot;
-$ git config --global user.email &quot;你的GitHub注册邮箱&quot;
-$ ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code></pre><blockquote>
+ <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--global user.name <span class="string">"你的GitHub用户名"</span></span><br><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">"你的GitHub注册邮箱"</span></span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱"</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p>第三行命令要求输入密码，该密码用于每次 Git 推送更新时的身份验证，无需密码，直接回车到底即可。</p>
 </blockquote>
 </li>
@@ -477,36 +480,29 @@ $ ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code></pre><blockqu
 <li><p>在合适位置创建 <code>blog</code> 文件夹，今后博客相关的所有的文件都放这个文件夹。</p>
 </li>
 <li><p>启用 Hexo。在 <code>blog</code> 文件夹内右键打开 Git Bash (后面将省略类似说明)，输入：</p>
-<pre><code>$ hexo init # 在当前目录创建 hexo 的实例</code></pre><blockquote>
+ <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init <span class="comment"># 在当前目录创建 hexo 的实例</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p>命令执行的结果一般总有反馈，执行成功或是失败、失败的原因或建议的处理方式，请善用这些信息。</p>
 </blockquote>
 <blockquote>
-<p>主动理解与思考 &gt;&gt; 百度一下 &gt;&gt; 询问他人。</p>
+<p>学习的顺序：主动理解与思考 &gt;&gt; 百度一下 &gt;&gt; 询问他人。</p>
 </blockquote>
 </li>
 <li><p>检查 Hexo。输入：</p>
-<pre><code>$ hexo g    # 生成静态网页
-
-$ hexo s     # 用本地服务器进行网页预览
-# 在浏览器输入 localhost:4000 就可以看见 hexo 生成的网页</code></pre></li>
+ <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo g    <span class="comment"># 生成静态网页</span></span><br><span class="line"><span class="variable">$ </span>hexo s     <span class="comment"># 用本地服务器进行网页预览，在浏览器输入 localhost:4000 查看</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p>常用的Hexo指令。</p>
-<pre><code>$ hexo help     #查看所有 hexo 指令和功能
-$ hexo g     #根据当前配置文件生成网页，所有内容存入 blog/public 目录
-$ hexo s     #使可通过 localhost:4000 访问 public 文件夹中的内容，即本地预览已生成的网页
-$ hexo d    #推送 public 内的网页到云端服务器
-$ hexo g -d     #依据当前配置，生成网页并推送
-$ hexo new &quot;art_name&quot;   #新建名为 &quot;art_name&quot; 的新文章
-$ hexo clean    #清除缓存，也清空 public 文件夹内容</code></pre><blockquote>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo <span class="built_in">help</span>     <span class="comment">#查看所有 hexo 指令和功能</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g     <span class="comment">#根据当前配置文件生成网页，所有内容存入 blog/public 目录</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo s     <span class="comment">#使可通过 localhost:4000 访问 public 文件夹中的内容，即本地预览已生成的网页</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d    <span class="comment">#推送 public 内的网页到云端服务器</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g -d     <span class="comment">#依据当前配置，生成网页并推送</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo new <span class="string">"art_name"</span>   <span class="comment">#新建名为 "art_name" 的新文章</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo clean    <span class="comment">#清除缓存，也清空 public 文件夹内容</span></span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p>新建的文章为 <code>.md</code> 格式(<a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown</a>)，存放于 <code>blog/source/_posts/</code> 。</p>
 </blockquote>
 <blockquote>
 <p>通过 <code>hexo new</code> 命令新建的 <code>.md</code> 文件自带了一个 <code>Front-matter</code> 参数段，如下所示：</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet"> -</span><span class="bullet">--</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span> <span class="string">+</span> <span class="string">Github</span> <span class="string">Pages</span> <span class="string">搭建个人博客（基础篇）</span></span><br><span class="line"><span class="attr"> date:</span> <span class="number">2019</span><span class="bullet">-05</span><span class="bullet">-21</span> <span class="number">22</span><span class="string">:12:19</span></span><br><span class="line"><span class="attr"> tags:</span> <span class="string">blog</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 </blockquote>
-<pre><code>---
-title: Hexo + Github Pages 搭建个人博客（基础篇）
-date: 2019-05-21 22:12:19
-tags: blog
----</code></pre><blockquote>
+<blockquote>
 <p>Hexo 通过读取该参数段来获得文章的时间、标题、标签等信息。你也可以在其他位置新建 <code>.md</code> 文件，编辑好内容后放入 <code>_posts</code> 文件夹，只是别忘了手动添加这些参数段。</p>
 </blockquote>
 </li>
@@ -555,11 +551,16 @@ timezone:   #时区，无需值</code></pre><blockquote>
 </li>
 </ol>
 <hr>
-<h1 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h1><p>现在你已经学会如何把自己的文章发表在个人博客上了，尽管它还不太漂亮，但我们之后可以做更多的事来让它变得足够让你满意。这些事情包括：</p>
+<h1 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h1><ul>
+<li>现在你已经学会如何把自己的文章发表在个人博客上，尽管它还不太漂亮，但我们之后可以做更多的事来让它变得更好。这些事情包括：</li>
+</ul>
 <ol>
-<li><strong>使用第三方主题</strong>。Hexo 会根据主题来生成静态页面，访问 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo 主题商店</a> 挑选一款合适的博客主题，进入其 Github 页面获取下载代码命令，在 <code>blog/</code> 目录下执行安装。本博客所用主题为 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a>。</li>
-<li><strong>定制主题内容</strong>。参考所用主题的官方文档，配合阅读主题配置文件。</li>
-<li><strong>优化文章排版</strong>。毕竟文章才是博客的核心，熟练使用 Markdown 语法吧，它真的有够简洁，多涉猎一些优秀的排版作品，学习并借鉴其好的用法。</li>
+<li><strong>使用第三方主题</strong>。Hexo 会根据主题来生成静态页面，访问 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo 主题商店</a> 挑选一款合适的博客主题，进入其 Github 页面获取下载命令，在 <code>blog/</code> 目录下执行安装。本博客所用主题为 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a>。</li>
+<li><strong>定制主题内容</strong>。主题是影响博客外观最多的角色，阅读你的主题的官方文档，配合参考网络上各种各样的教程去修改主题配置文件、样式表文件，你几乎可以实现任何事。</li>
+<li><strong>优化文章排版</strong>。毕竟文章才是博客的核心，熟练使用 Markdown 语法吧，它真的有够简洁，多涉猎一些优秀的排版作品，学习并借鉴其好的用法。<blockquote>
+<p>例如：代码块的标记，使用反引号的麻烦要远少于使用缩进，尽管看起来它需要多敲几下键盘，缩进的坑真是谁用谁知道。</p>
+</blockquote>
+</li>
 </ol>
 
       

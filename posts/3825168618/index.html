@@ -19,7 +19,7 @@
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#0B91D2">
+<meta name="theme-color" content="#00cccc">
 
 
 
@@ -61,7 +61,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.1.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#0B91D2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#00cccc">
 
 
 
@@ -111,7 +111,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/evensyell/img_bed/master//blog/20190525170332.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/evensyell/img_bed/master//blog/20190525165845.png">
-<meta property="og:updated_time" content="2019-05-25T12:23:59.543Z">
+<meta property="og:updated_time" content="2019-05-25T15:39:38.148Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Github Pages 搭建个人博客（优化篇）">
 <meta name="twitter:description" content="写在前面：  所谓优化，可谓是为提高检索效率、降低阅读成本而不得不做的操作。不去做的话，以初始站点的模样，将严重影响用户体验。 故强烈建议在完成基础篇之后，使用优化篇。">
@@ -364,7 +364,7 @@
                 
               
 
-              <time title="创建时间：2019.5.25 12:27:51 / 修改时间：20:23:59" itemprop="dateCreated datePublished" datetime="2019-05-25T12:27:51+08:00">2019.5.25</time>
+              <time title="创建时间：2019.5.25 12:27:51 / 修改时间：23:39:38" itemprop="dateCreated datePublished" datetime="2019-05-25T12:27:51+08:00">2019.5.25</time>
             
 
             
@@ -440,10 +440,8 @@
 </blockquote>
 </li>
 <li><p>在文件最后添加上 abblink 配置：</p>
-<pre><code># abbrlink config
-abbrlink:
-    alg: crc32
-    rep: dec</code></pre></li>
+ <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># abbrlink config</span></span><br><span class="line"><span class="symbol">abbrlink:</span></span><br><span class="line"><span class="symbol">    alg:</span> crc32</span><br><span class="line"><span class="symbol">    rep:</span> dec</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>效果：预览或推送后，文章文档的 <code>Front-matter</code> 参数块中出现了 <code>abbrlink: 3825168618</code> 这样的字段。网页链接也变为 <code>http://localhost:4000/posts/3818330983/</code>，今后无论怎么修改文章题目或内容，只要不去手动修改 <code>abbrlink</code> 值，链接就将永久不变。</p>
 </li>
 </ol>
@@ -452,21 +450,24 @@ abbrlink:
 <li>如果你忽视了基础篇中的一个小提示，你可能会发现，尽管首页显示的是一个所有文章的列表，但每一篇文章都是全文显示，这样浏览起来可不舒服。更普遍的习惯是启用预览摘要。</li>
 </ul>
 <ol>
-<li><p>方法1：手动插入标签（推荐）</p>
+<li>方法1：手动插入标签（推荐）</li>
+</ol>
 <ul>
-<li>在文章编辑时，先编写摘要部分，接着换行行输入 <code>&lt;!--more--&gt;</code> ，然后再换行开始编写正文。标签之前的部分将作为摘要显示在首页，之后的部分将作为正文在点击 “阅读更多” 按钮后展示。<pre><code>&gt; 在标签前一空行插入 `---` ，即分隔符，会让摘要更为美观。</code></pre></li>
-</ul>
+<li>在文章编辑时，先编写摘要部分，接着换行行输入 <code>&lt;!--more--&gt;</code> ，然后再换行开始编写正文。标签之前的部分将作为摘要显示在首页，之后的部分将作为正文在点击 “阅读更多” 按钮后展示。<blockquote>
+<p>在标签前一空行插入 <code>---</code> ，即分隔符，会让摘要更为美观。</p>
+</blockquote>
 </li>
-<li><p>方法2：固定字数截断</p>
+</ul>
+<ol start="2">
+<li>方法2：固定字数截断</li>
+</ol>
 <ul>
 <li><p>在主题配置文件中进行如下参数设置：</p>
-<pre><code>auto_excerpt:
-   enable: true    #启用自动摘要
-   length: 100     #设置摘要字数</code></pre></li>
+  <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span>    <span class="comment">#启用自动摘要</span></span><br><span class="line"><span class="attr">    length:</span> <span class="number">100</span>     <span class="comment">#设置摘要字数</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-</li>
-<li><p>效果见本站</p>
-</li>
+<ol>
+<li>效果见本站。</li>
 </ol>
 <hr>
 <h1 id="使用图床插入网络图片"><a href="#使用图床插入网络图片" class="headerlink" title="使用图床插入网络图片"></a>使用图床插入网络图片</h1><ul>
@@ -479,8 +480,8 @@ abbrlink:
 </li>
 <li><p>安装开源图床管理工具 <a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">Picgo</a> ，进入图床设置界面填写如下：<br><img src="https://raw.githubusercontent.com/evensyell/img_bed/master//blog/20190525165845.png" alt> </p>
 <blockquote>
-<p>仓库名填写格式：账户名/仓库名（我的仓库名是 img_bed）；</p>
-<pre><code>分支名：统一填写 “master”；</code></pre></blockquote>
+<p>仓库名填写格式：账户名/仓库名（我的仓库名是 img_bed）；<br>分支名：统一填写 “master”；</p>
+</blockquote>
 <blockquote>
 <p>存储的路径可不填，如果填写 <code>blog/</code>，就会在 repository 下创建一个“blog”文件夹存放图片，否则所有图片都在根目录下；</p>
 </blockquote>
@@ -499,24 +500,12 @@ abbrlink:
 </ul>
 <ol>
 <li><p>修改主题配置文件中的相关参数即可（图标来自  <a href="http://fontawesome.io/icons/" target="_blank" rel="noopener">Font Awesome</a>，填写从中找到的图标名即可 ）：</p>
-<pre><code>social:
-    #GitHub: https://github.com/yourname || github
-    #E-Mail: mailto:yourname@gmail.com || envelope
-    #Weibo: https://weibo.com/yourname || weibo
-    #Google: https://plus.google.com/yourname || google
-    #Twitter: https://twitter.com/yourname || twitter
-    #FB Page: https://www.facebook.com/yourname || facebook
-    #VK Group: https://vk.com/yourname || vk
-    #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-    #YouTube: https://youtube.com/yourname || youtube
-    #Instagram: https://instagram.com/yourname || instagram
-    #Skype: skype:yourname?call|chat || skype
-    bilibili: https://space.bilibili.com/4680569 || youtube-play
+  <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">social</span>:</span><br><span class="line">    # <span class="attribute">GitHub</span>: <span class="attribute">https</span>:<span class="comment">//github.com/yourname || github</span></span><br><span class="line">    # <span class="attribute">Weibo</span>: <span class="attribute">https</span>:<span class="comment">//weibo.com/yourname || weibo</span></span><br><span class="line">    # <span class="attribute">Google</span>: <span class="attribute">https</span>:<span class="comment">//plus.google.com/yourname || google</span></span><br><span class="line">    # <span class="attribute">Twitter</span>: <span class="attribute">https</span>:<span class="comment">//twitter.com/yourname || twitter</span></span><br><span class="line">    # FB <span class="attribute">Page</span>: <span class="attribute">https</span>:<span class="comment">//www.facebook.com/yourname || facebook</span></span><br><span class="line">    # VK <span class="attribute">Group</span>: <span class="attribute">https</span>:<span class="comment">//vk.com/yourname || vk</span></span><br><span class="line">    # <span class="attribute">StackOverflow</span>: <span class="attribute">https</span>:<span class="comment">//stackoverflow.com/yourname ||stack-overflow</span></span><br><span class="line">    # <span class="attribute">YouTube</span>: <span class="attribute">https</span>:<span class="comment">//youtube.com/yourname || youtube</span></span><br><span class="line">    # <span class="attribute">Instagram</span>: <span class="attribute">https</span>:<span class="comment">//instagram.com/yourname || instagram</span></span><br><span class="line">    # <span class="attribute">Skype</span>: <span class="attribute">skype</span>:yourname?call|chat || skype</span><br><span class="line">    <span class="attribute">bilibili</span>: <span class="attribute">https</span>:<span class="comment">//space.bilibili.com/4680569 || youtube-play</span></span><br><span class="line">    # 格式为   自定义名称：链接 || 图标</span><br></pre></td></tr></table></figure>
 
-    # 格式为   自定义名称：链接 || 图标</code></pre><blockquote>
+<blockquote>
 <p>博客菜单的增删、图标自定义方法同理 ，其代码块为主题配置文件的 <code>menu:</code> ，新启用或新自定义的菜单需要运行一条命令来生成对应页面，否则将只能访问到404页面，例如：</p>
-<pre><code>hexo new page &quot;tags&quot;
-# 生成 tags 页面，启用标签菜单</code></pre></blockquote>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo new<span class="built_in"> page </span><span class="string">"tags"</span>     # 生成 tags 页面，启用标签菜单</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
 </li>
 <li><p>效果见本站</p>
 </li>
@@ -529,16 +518,11 @@ abbrlink:
 <li><p>选择一张不要太大的图片，放入主题目录下的 <code>source/images/</code> 目录下，并重命名为 <code>avatar</code>。</p>
 </li>
 <li><p>打开主题配置文件，修改如下字段：</p>
-<pre><code># Sidebar Avatar
-avatar:
-    url: /images/avatar.png
-    rounded: true     #是否为圆形头像，否则为方形
-    opacity: 1     #不透明度，数字越小越透明
-    rotated: true     #开启头像旋转</code></pre></li>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sidebar Avatar</span></span><br><span class="line"><span class="attr"> avatar:</span></span><br><span class="line"><span class="attr">    url:</span> <span class="string">/images/avatar.png</span></span><br><span class="line"><span class="attr">    rounded:</span> <span class="literal">true</span> 	<span class="comment">#是否为圆形头像，否则为方形</span></span><br><span class="line"><span class="attr">    opacity:</span> <span class="number">1</span> 	<span class="comment">#不透明度，数字越小越透明</span></span><br><span class="line"><span class="attr">    rotated:</span> <span class="literal">true</span> 	<span class="comment">#开启头像旋转</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p>修改网站 Logo 同理，将图片文件放入刚才那个文件夹，然后修改主题配置文件中的对应参数，或修改文件名为既有参数值，总之使链接指向 Logo 文件即可：</p>
-<pre><code>favicon:
-    small: /images/favicon-16x16.png
-    medium: /images/favicon-32x32.png</code></pre></li>
+ <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">favicon:</span></span><br><span class="line"><span class="symbol">    small:</span> <span class="meta-keyword">/images/</span>favicon<span class="number">-16</span>x16.png</span><br><span class="line"><span class="symbol">    medium:</span> <span class="meta-keyword">/images/</span>favicon<span class="number">-32</span>x32.png</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>效果见本站。</p>
 </li>
 </ol>
@@ -548,16 +532,8 @@ avatar:
 </ul>
 <ol>
 <li><p>打开 <code>\theme\next\source\css\_common\components\post\post.styl</code> 文件，添加如下代码：</p>
-<pre><code>.post-body p a{
-    color: #64CEAA;     //原始链接颜色
-    border-bottom: none;
-    border-bottom: 1px solid #64CEAA;    //底部分割线颜色
-    &amp;:hover {
-        color: #fc6423;     //鼠标经过颜色
-        border-bottom: none;
-        border-bottom: 1px solid #fc6423;     //底部分割线颜色
-        }
-    }</code></pre></li>
+ <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#64CEAA</span>; 	<span class="comment">//原始链接颜色</span></span><br><span class="line">    <span class="attribute">border-bottom</span>: none;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#64CEAA</span>;	<span class="comment">//底部分割线颜色</span></span><br><span class="line">    &amp;:hover &#123;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#fc6423</span>; 	<span class="comment">//鼠标经过颜色</span></span><br><span class="line">        <span class="attribute">border-bottom</span>: none;</span><br><span class="line">        <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#fc6423</span>; 	<span class="comment">//底部分割线颜色</span></span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>效果展示：<a href="https://www.baidu.com/s?ie=UTF-8&wd=%E6%8C%96%E6%8E%98%E6%9C%BA%E5%93%AA%E5%AE%B6%E5%BC%BA" target="_blank" rel="noopener">这是一个通往百度的链接</a></p>
 </li>
 </ol>
@@ -567,10 +543,10 @@ avatar:
 </ul>
 <ol>
 <li><p>在路径 <code>\themes\next\layout_macro</code> 中新建 <code>passage-end-tag.swig</code> 文件，添加以下代码：</p>
- <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">   </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> not is_index %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">       <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color:#A5A2A0;font-size:14px;"</span>&gt;</span> ———— 全文结束，感谢阅读 ————</span></span><br><span class="line"><span class="xml">       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">   </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+ <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> not is_index %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color:#A5A2A0;font-size:14px;"</span>&gt;</span> ———— 全文结束，感谢阅读 ————</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>打开 <code>\themes\next\layout_macro\post.swig</code> 文件，在如下位置添加以下代码：</p>
- <figure class="highlight styl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;#####################&#125;</span><br><span class="line">&#123;### END POST BODY ###&#125;</span><br><span class="line">&#123;#####################&#125;</span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">&#123;% if not is_index %&#125;</span><br><span class="line">	&#123;% include 'passage-end-tag.swig' %&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;#####################&#125;</span><br><span class="line">&#123;### END POST BODY ###&#125;</span><br><span class="line">&#123;#####################&#125;</span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">&#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">    &#123;% include <span class="string">'passage-end-tag.swig'</span> %&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>效果见本文。</p>
 </li>
