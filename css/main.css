@@ -1059,9 +1059,9 @@ pre .javascript .function {
 .back-to-top {
   visibility: hidden;
   margin: 8px -10px -20px;
-  background: #0cc r;
+  background: #eee;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 0.8;
   cursor: pointer;
   text-align: center;
 }
@@ -1073,7 +1073,6 @@ pre .javascript .function {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-  background: #0cc r;
 }
 .header {
   background: transparent;
@@ -1083,7 +1082,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #8dead8;
+  background: #222;
 }
 .site-meta {
   margin: 0;
@@ -1099,7 +1098,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: #8dead8;
+  background: #222;
   border-bottom: none;
 }
 .brand:hover {
@@ -1249,10 +1248,6 @@ pre .javascript .function {
 }
 .use-motion .collection-title {
   opacity: 0;
-}
-.post-body p p {
-  text-indent: 2em;
-/*em是相对单位，2em即现在一个字大小的两倍*/
 }
 .post-body p a {
   color: #0593d3;
@@ -1774,7 +1769,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffed0f;
+  background: #870b3e;
 }
 .feed-link,
 .chat {
@@ -2131,6 +2126,25 @@ pre .javascript .function {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #ccc;
+}
+.popular-posts-header {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+ul.popular-posts {
+  padding: 0;
+}
+ul.popular-posts .popular-posts-item {
+  margin-left: 2em;
+}
+ul.popular-posts .popular-posts-item .popular-posts-title {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  line-height: 2.4;
 }
 .copy-btn {
   display: inline-block;
@@ -2983,14 +2997,13 @@ body {
 }
 .post-body h3 {
   font-size: 1.3em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px dotted #eee;
 }
 .post-body h3 code {
   font-size: 1em;
 }
 .post-body h4 {
   font-size: 1.2em;
-  border-bottom: 1px dotted #eee;
 }
 .post-body h4 code {
   font-size: 1em;
@@ -3072,7 +3085,7 @@ code {
 pre {
   margin: 5px 0;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 .highlight,
 code,
@@ -3080,7 +3093,7 @@ pre {
   border: 0px solid #d6d6d6;
 }
 body {
-  background: url("/images/wallpaper.jpg");
+  background-color: #e0f9f7;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
