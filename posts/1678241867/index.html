@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN,en,jp,default">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,18 +101,18 @@
 
 
 
-  <meta name="description" content="写在前面：  本文力求以最少的字数完成教程目的，但也会对重要的注意事项进行提示。 适用人群：知道自己要做什么，只想要一篇实用教程之人。">
+  <meta name="description" content="写在前面：  教程目标：完成博客的搭建，并发表一篇文章。 适用人群：知道自己要做什么，乐于学习，只想要一篇实用教程之人。">
 <meta name="keywords" content="blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + Github Pages 搭建个人博客（初阶）">
-<meta property="og:url" content="http://yoursite.com/Hexo-Github-Pages-搭建个人博客（基础篇）/index.html">
+<meta property="og:title" content="Hexo + Github Pages 搭建个人博客（基础篇）">
+<meta property="og:url" content="http://yoursite.com/posts/1678241867/index.html">
 <meta property="og:site_name" content="清明">
-<meta property="og:description" content="写在前面：  本文力求以最少的字数完成教程目的，但也会对重要的注意事项进行提示。 适用人群：知道自己要做什么，只想要一篇实用教程之人。">
+<meta property="og:description" content="写在前面：  教程目标：完成博客的搭建，并发表一篇文章。 适用人群：知道自己要做什么，乐于学习，只想要一篇实用教程之人。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-23T16:06:30.290Z">
+<meta property="og:updated_time" content="2019-05-25T07:53:14.222Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo + Github Pages 搭建个人博客（初阶）">
-<meta name="twitter:description" content="写在前面：  本文力求以最少的字数完成教程目的，但也会对重要的注意事项进行提示。 适用人群：知道自己要做什么，只想要一篇实用教程之人。">
+<meta name="twitter:title" content="Hexo + Github Pages 搭建个人博客（基础篇）">
+<meta name="twitter:description" content="写在前面：  教程目标：完成博客的搭建，并发表一篇文章。 适用人群：知道自己要做什么，乐于学习，只想要一篇实用教程之人。">
 
 
 
@@ -120,7 +120,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/Hexo-Github-Pages-搭建个人博客（基础篇）/">
+  <link rel="canonical" href="http://yoursite.com/posts/1678241867/">
 
 
 
@@ -130,7 +130,7 @@
   };
 </script>
 
-  <title>Hexo + Github Pages 搭建个人博客（初阶） | 清明</title>
+  <title>Hexo + Github Pages 搭建个人博客（基础篇） | 清明</title>
   
 
 
@@ -341,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Hexo-Github-Pages-搭建个人博客（基础篇）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/1678241867/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="清明">
@@ -358,7 +358,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hexo + Github Pages 搭建个人博客（初阶）
+          <h2 class="post-title" itemprop="name headline">Hexo + Github Pages 搭建个人博客（基础篇）
 
               
             
@@ -401,7 +401,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019.5.24 00:06:30" itemprop="dateModified" datetime="2019-05-24T00:06:30+08:00">2019.5.24</time>
+                <time title="修改时间：2019.5.25 15:53:14" itemprop="dateModified" datetime="2019-05-25T15:53:14+08:00">2019.5.25</time>
               
             
           </span>
@@ -429,7 +429,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.1k</span>
+                <span title="本文字数">3.3k</span>
               
 
               
@@ -455,12 +455,12 @@
       
         <p>写在前面：</p>
 <ul>
-<li>本文力求以最少的字数完成教程目的，但也会对重要的注意事项进行提示。</li>
-<li>适用人群：知道自己要做什么，只想要一篇实用教程之人。<a id="more"></a>
-
-</li>
+<li>教程目标：完成博客的搭建，并发表一篇文章。</li>
+<li>适用人群：知道自己要做什么，乐于学习，只想要一篇实用教程之人。</li>
 </ul>
 <hr>
+<a id="more"></a>
+
 <h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><ul>
 <li><p>运行环境：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js —— 官网下载</a></p>
 </li>
@@ -512,17 +512,6 @@ $ ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code></pre><blockqu
 
 $ hexo s     # 用本地服务器进行网页预览
 # 在浏览器输入 localhost:4000 就可以看见 hexo 生成的网页</code></pre></li>
-<li><p>关联 Hexo 与 Github 储存库。打开 <code>blog/_config.yml</code> 文件，拉到最下面，将最后一段修改为如下所示。</p>
-<pre><code>deploy:
-    type: git
-    repo: https://github.com/username/username.github.io.git
-    branch: master</code></pre><blockquote>
-<p>别忘了替换 username；每个冒号后面必须有一个英文空格</p>
-</blockquote>
-<blockquote>
-<p>今后还会频繁、大量的编辑这种配置文件，一款开启代码高亮的编辑器将能够帮助你节省很多精力和时间。推荐微软的开源编辑器 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a> ，它免费、轻量、响应快、插件丰富（我甚至用它来写Markdown）</p>
-</blockquote>
-</li>
 <li><p>常用的Hexo指令。</p>
 <pre><code>$ hexo help     #查看所有 hexo 指令和功能
 $ hexo g     #根据当前配置文件生成网页，所有内容存入 blog/public 目录
@@ -545,6 +534,31 @@ tags: blog
 </blockquote>
 </li>
 </ol>
+<h1 id="定制站点信息"><a href="#定制站点信息" class="headerlink" title="定制站点信息"></a>定制站点信息</h1><ol>
+<li><p>打开 <code>blog/_config.yml</code> 文件，对进行博客个人信息的修改，使之正式成为你自己的博客：</p>
+<pre><code># Site
+title:  #博客标题
+subtitle:   #副标题 
+description:    #描述
+keywords:   #关键词，用于搜索引擎收录
+author:    #作者名
+language: zh-CN    #设定语言为中文
+timezone:   #时区，无需值</code></pre><blockquote>
+<p>站点配置文件（blog/_config.yml）的内容包括站点信息、功能开关、主题和插件配置等等。详情参见 <a href="https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E5%9D%80" target="_blank" rel="noopener">Hexo 官方中文文档</a>。</p>
+</blockquote>
+</li>
+<li><p>关联 Hexo 与 Github 储存库。将 <code>blog/_config.yml</code> 文档拉到最下面，将最后一段修改为如下所示。</p>
+<pre><code>deploy:
+    type: git
+    repo: https://github.com/username/username.github.io.git
+    branch: master</code></pre><blockquote>
+<p>别忘了替换 username；每个冒号后面必须有一个英文空格</p>
+</blockquote>
+<blockquote>
+<p>今后还会频繁、大量的编辑这种配置文件，一款开启代码高亮的编辑器将能够帮助你节省很多精力和时间。推荐微软的开源编辑器 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a> ，它免费、轻量、响应快、插件丰富（我甚至用它来写Markdown）</p>
+</blockquote>
+</li>
+</ol>
 <h1 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h1><ol>
 <li><p>通过 hexo new 命令新建一篇文章，随便命个名比如《春江花月夜》。 进入 <code>blog/_posts/</code> 文件夹找到它，在里面随便粘贴上点内容，比如：</p>
 <pre><code>作者：张若虚
@@ -558,15 +572,16 @@ tags: blog
 人生代代无穷已，江月年年望相似。</code></pre></li>
 <li><p>保存后在 <code>blog</code> 目录下打开命令行，输入 <code>hexo g - d</code>推送更新。稍等一会后打开自己的博客网址 <code>username.github.io</code>，体会一会儿张若虚的感情吧hh。</p>
 </li>
-<li><p>你已完成本教程计划，夸奖自己一下。</p>
+<li><p>如果你想修改文章，只需进入该文章对应的 <code>.md</code> 文件进行修改保存，再次 <code>hexo g -d</code> 即可。</p>
+</li>
+<li><p>至此你已完成本教程目标，恭喜。</p>
 </li>
 </ol>
 <hr>
-<h1 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h1><p>&#160;&#160;现在你已经学会如何把自己的文章发表在个人博客上了，尽管它还不太漂亮，但我们之后可以做更多的事来让它变得足够让你满意。这些事情包括：</p>
+<h1 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h1><p>现在你已经学会如何把自己的文章发表在个人博客上了，尽管它还不太漂亮，但我们之后可以做更多的事来让它变得足够让你满意。这些事情包括：</p>
 <ol>
-<li><strong>定制站点内容</strong>。修改站点配置文件（blog/_config.yml），这些修改包括站点信息、功能开关、主题和插件配置等等。详情参见 <a href="https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E5%9D%80" target="_blank" rel="noopener">Hexo 官方中文文档</a>。</li>
 <li><strong>使用第三方主题</strong>。Hexo 会根据主题来生成静态页面，访问 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo 主题商店</a> 挑选一款合适的博客主题，进入其 Github 页面获取下载代码命令，在 <code>blog/</code> 目录下执行安装。本博客所用主题为 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a>。</li>
-<li><strong>定制主题内容</strong>。参考所用主题的官方文档，或直接阅读主题配置文件（建议至少尝试一下）</li>
+<li><strong>定制主题内容</strong>。参考所用主题的官方文档，配合阅读主题配置文件。</li>
 <li><strong>优化文章排版</strong>。毕竟文章才是博客的核心，熟练使用 Markdown 语法吧，它真的有够简洁，多涉猎一些优秀的排版作品，学习并借鉴其好的用法。</li>
 </ol>
 
@@ -605,15 +620,15 @@ tags: blog
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/3825168618/" rel="prev" title="Hexo + Github Pages 搭建个人博客（优化篇）">
+                Hexo + Github Pages 搭建个人博客（优化篇） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -754,7 +769,7 @@ tags: blog
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境安装"><span class="nav-number">1.</span> <span class="nav-text">环境安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#启用-Github-Pages"><span class="nav-number">2.1.</span> <span class="nav-text">启用 Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联-Git-与-Github"><span class="nav-number">2.2.</span> <span class="nav-text">关联 Git 与 Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初尝-Hexo"><span class="nav-number">3.</span> <span class="nav-text">初尝 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#发表文章"><span class="nav-number">4.</span> <span class="nav-text">发表文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#了解更多"><span class="nav-number">5.</span> <span class="nav-text">了解更多</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境安装"><span class="nav-number">1.</span> <span class="nav-text">环境安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#启用-Github-Pages"><span class="nav-number">2.1.</span> <span class="nav-text">启用 Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联-Git-与-Github"><span class="nav-number">2.2.</span> <span class="nav-text">关联 Git 与 Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初尝-Hexo"><span class="nav-number">3.</span> <span class="nav-text">初尝 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定制站点信息"><span class="nav-number">4.</span> <span class="nav-text">定制站点信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#发表文章"><span class="nav-number">5.</span> <span class="nav-text">发表文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#了解更多"><span class="nav-number">6.</span> <span class="nav-text">了解更多</span></a></li></ol></div>
             
 
           </div>
