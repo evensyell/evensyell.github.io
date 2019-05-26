@@ -101,18 +101,20 @@
 
 
 
-  <meta name="description" content="使用免费资源搭建个人博客网站，并发表一篇文章，这样的事你也能够做到。">
+  <meta name="description" content="能使网站变漂亮的 N 种方法，谁会不心动呢？">
 <meta name="keywords" content="blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + Github Pages 搭建个人博客（基础篇）">
-<meta property="og:url" content="https://evensyell.github.io/posts/1678241867/index.html">
+<meta property="og:title" content="Hexo + Github Pages 搭建个人博客（美化篇）">
+<meta property="og:url" content="https://evensyell.github.io/posts/3871206004/index.html">
 <meta property="og:site_name" content="花自绰约 藤自窈窕">
-<meta property="og:description" content="使用免费资源搭建个人博客网站，并发表一篇文章，这样的事你也能够做到。">
+<meta property="og:description" content="能使网站变漂亮的 N 种方法，谁会不心动呢？">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-26T10:07:00.903Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/evensyell/img_bed/master//blog/20190526135537.png">
+<meta property="og:updated_time" content="2019-05-26T10:01:23.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo + Github Pages 搭建个人博客（基础篇）">
-<meta name="twitter:description" content="使用免费资源搭建个人博客网站，并发表一篇文章，这样的事你也能够做到。">
+<meta name="twitter:title" content="Hexo + Github Pages 搭建个人博客（美化篇）">
+<meta name="twitter:description" content="能使网站变漂亮的 N 种方法，谁会不心动呢？">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/evensyell/img_bed/master//blog/20190526135537.png">
 
 
 
@@ -120,7 +122,7 @@
 
   
   
-  <link rel="canonical" href="https://evensyell.github.io/posts/1678241867/">
+  <link rel="canonical" href="https://evensyell.github.io/posts/3871206004/">
 
 
 
@@ -130,7 +132,7 @@
   };
 </script>
 
-  <title>Hexo + Github Pages 搭建个人博客（基础篇） | 花自绰约 藤自窈窕</title>
+  <title>Hexo + Github Pages 搭建个人博客（美化篇） | 花自绰约 藤自窈窕</title>
   
 
 
@@ -347,7 +349,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://evensyell.github.io/posts/1678241867/">
+    <link itemprop="mainEntityOfPage" href="https://evensyell.github.io/posts/3871206004/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="清明">
@@ -364,7 +366,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo + Github Pages 搭建个人博客（基础篇）
+          <h1 class="post-title" itemprop="name headline">Hexo + Github Pages 搭建个人博客（美化篇）
 
               
             
@@ -373,10 +375,6 @@
 
         <div class="post-meta">
         
-          <font color="#1fa67a"><i class="fa fa-arrow-up"></i>
-          <strong>Top</strong></font>
-          <span class="post-meta-divider">|</span>
-          
           <span class="post-time">
 
             
@@ -395,24 +393,12 @@
                 
               
 
-              <time title="创建时间：2019.5.21 22:12:19" itemprop="dateCreated datePublished" datetime="2019-05-21T22:12:19+08:00">2019.5.21</time>
+              <time title="创建时间：2019.5.26 15:09:21 / 修改时间：18:01:23" itemprop="dateCreated datePublished" datetime="2019-05-26T15:09:21+08:00">2019.5.26</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019.5.26 18:07:00" itemprop="dateModified" datetime="2019-05-26T18:07:00+08:00">2019.5.26</time>
               
             
           </span>
@@ -447,7 +433,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.4k</span>
+                <span title="本文字数">6k</span>
               
 
               
@@ -472,126 +458,108 @@
 
       
         <ul>
-<li>使用免费资源搭建个人博客网站，并发表一篇文章，这样的事你也能够做到。</li>
+<li>能使网站变漂亮的 N 种方法，谁会不心动呢？</li>
 </ul>
 <hr>
 <a id="more"></a>
-<h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><ul>
-<li><p>运行环境：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js —— 官网下载</a></p>
-</li>
-<li><p>版本控制工具：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">Git —— Github镜像下载</a></p>
-</li>
-<li><p>静态网页生成器：Hexo —— 在任意命令行(Cmd、PowerShell 或 Git Bash)中输入：</p>
-  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><code>cnpm</code> 是从淘宝镜像源进行包管理的指令，用以替代速度极慢的官方的 <code>npm</code>。后续需要运行的一切 <code>npm</code> 指令都可以替换为 <code>cnpm</code>。如果没有，可以运行以下命令安装：</p>
-  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h1 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 Github</h1><h2 id="启用-Github-Pages"><a href="#启用-Github-Pages" class="headerlink" title="启用 Github Pages"></a>启用 Github Pages</h2><ol>
-<li><p>登陆 <a href="https://github.com/" target="_blank" rel="noopener">Github</a></p>
-</li>
-<li><p>选择右上角的 new repository 新建一个储存库。</p>
-<blockquote>
-<p>注意：repository name 的格式必须为 username.github.io，这也就是你博客的网址。其中 <code>username</code> 为你的 Github 用户名，填写错误将不能通过 Git 推送更新博客。</p>
-</blockquote>
-</li>
-<li><p>打开刚刚创建的储存库，进入 setting ，往下拉找到 Github Pages 一项，确保其已经开启，或在随便选择一个 theme 后能够开启，此时你应当已经可以访问 username.github.io。</p>
-<blockquote>
-<p>对于复杂或陌生网页上文本信息的寻找和定位，如 “setting”，请善用浏览器的查找功能 <code>Ctrl+F</code>，在文档中也是如此。</p>
-</blockquote>
-<h2 id="关联-Git-与-Github"><a href="#关联-Git-与-Github" class="headerlink" title="关联 Git 与 Github"></a>关联 Git 与 Github</h2></li>
-<li><p>在任意位置右键，选择 Git Bush Here，依次输入如下命令：</p>
- <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"你的GitHub用户名"</span></span><br><span class="line">$ git config --global user.email <span class="string">"你的GitHub注册邮箱"</span></span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱"</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>第三行命令要求输入密码，该密码用于每次 Git 推送更新时的身份验证，无需密码，直接回车到底即可。</p>
-</blockquote>
-</li>
-<li><p>打开电脑的 <code>.ssh</code> 文件夹 ( C:\Users\username\.ssh )，将<code>id_rsa.pub</code> 密钥文件的内容全部复制。</p>
-</li>
-<li><p>打开 <a href="https://github.com/settings/keys" target="_blank" rel="noopener">github.com/settings/keys</a> 页面，点击 New SSH Key。Title 随便填，将刚才复制的内容粘贴到 Key 一栏，Add，搞定。如此一来今后的 Git 推送将使用SSH的身份验证方式，更安全，也更省心。</p>
-</li>
-</ol>
-<hr>
-<h1 id="初尝-Hexo"><a href="#初尝-Hexo" class="headerlink" title="初尝 Hexo"></a>初尝 Hexo</h1><ol>
-<li><p>在合适位置创建 <code>blog</code> 文件夹，今后博客相关的所有的文件都放这个文件夹。</p>
-</li>
-<li><p>启用 Hexo。在 <code>blog</code> 文件夹内右键打开 Git Bash (后面将省略类似说明)，输入：</p>
- <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="comment"># 在当前目录创建 hexo 的实例</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>命令执行的结果一般总有反馈，执行成功或是失败、失败的原因或建议的处理方式，请善用这些信息。</p>
-</blockquote>
-<blockquote>
-<p>学习的顺序：主动理解与思考 &gt;&gt; 百度一下 &gt;&gt; 询问他人。</p>
-</blockquote>
-</li>
-<li><p>检查 Hexo。输入：</p>
- <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g    <span class="comment"># 生成静态网页</span></span><br><span class="line">$ hexo s     <span class="comment"># 用本地服务器进行网页预览，在浏览器输入 localhost:4000 查看</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>常用的Hexo指令。</p>
- <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="built_in">help</span>     <span class="comment">#查看所有 hexo 指令和功能</span></span><br><span class="line">$ hexo g     <span class="comment">#根据当前配置文件生成网页，所有内容存入 blog/public 目录</span></span><br><span class="line">$ hexo s     <span class="comment">#使可通过 localhost:4000 访问 public 文件夹中的内容，即本地预览已生成的网页</span></span><br><span class="line">$ hexo d    <span class="comment">#推送 public 内的网页到云端服务器</span></span><br><span class="line">$ hexo g -d     <span class="comment">#依据当前配置，生成网页并推送</span></span><br><span class="line">$ hexo new <span class="string">"art_name"</span>   <span class="comment">#新建名为 "art_name" 的新文章</span></span><br><span class="line">$ hexo clean    <span class="comment">#清除缓存，也清空 public 文件夹内容</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>新建的文章为 <code>.md</code> 格式(<a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown</a>)，存放于 <code>blog/source/_posts/</code> 。</p>
-</blockquote>
-<blockquote>
-<p>通过 <code>hexo new</code> 命令新建的 <code>.md</code> 文件自带了一个 <code>Front-matter</code> 参数段，如下所示：</p>
- <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> ---</span><br><span class="line"> title: Hexo + Github Pages 搭建个人博客（基础篇）</span><br><span class="line"> date: 2019-05-21 22:12:19</span><br><span class="line"> tags: blog</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>Hexo 通过读取该参数段来获得文章的时间、标题、标签等信息。你也可以在其他位置新建 <code>.md</code> 文件，编辑好内容后放入 <code>_posts</code> 文件夹，只是别忘了手动添加这些参数段。</p>
-</blockquote>
-</li>
-</ol>
-<hr>
-<h1 id="定制站点信息"><a href="#定制站点信息" class="headerlink" title="定制站点信息"></a>定制站点信息</h1><ol>
-<li><p>打开 <code>blog/_config.yml</code> 文件，对进行博客个人信息的修改，使之正式成为你自己的博客：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span>  <span class="comment">#博客标题</span></span><br><span class="line"><span class="attr">subtitle:</span>   <span class="comment">#个人简介</span></span><br><span class="line"><span class="attr">description:</span>    <span class="comment">#网站描述</span></span><br><span class="line"><span class="attr">keywords:</span>   <span class="comment">#关键词，用于搜索引擎收录</span></span><br><span class="line"><span class="attr">author:</span>    <span class="comment">#作者名</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>    <span class="comment">#设定语言为中文</span></span><br><span class="line"><span class="attr">timezone:</span>   <span class="comment">#时区，无需值</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>站点配置文件（blog/_config.yml）的内容包括站点信息、功能开关、主题和插件配置等等。详情参见 <a href="https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E5%9D%80" target="_blank" rel="noopener">Hexo 官方中文文档</a>。</p>
-</blockquote>
-</li>
-<li><p>关联 Hexo 与 Github 储存库。将 <code>blog/_config.yml</code> 文档拉到最下面，将最后一段修改为如下所示。</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="attr">https://github.com/username/username.github.io.git</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>别忘了替换 username；每个冒号后面必须有一个英文空格</p>
-</blockquote>
-<blockquote>
-<p>今后还会频繁、大量的编辑这种配置文件，一款开启代码高亮的编辑器将能够帮助你节省很多精力和时间。推荐微软的开源编辑器 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a> ，它免费、轻量、响应快、插件丰富（我甚至用它来写Markdown）</p>
-</blockquote>
-</li>
-</ol>
-<hr>
-<h1 id="发表一篇文章"><a href="#发表一篇文章" class="headerlink" title="发表一篇文章"></a>发表一篇文章</h1><ol>
-<li><p>通过 hexo new 命令新建一篇文章，随便命个名比如《春江花月夜》。 进入 <code>blog/_posts/</code> 文件夹找到它，在里面随便粘贴上点内容，比如：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">作者：张若虚</span></span><br><span class="line"><span class="string">&lt;!--more--&gt;</span>     <span class="comment"># 分隔符，以上内容作为摘要出现在博客首页</span></span><br><span class="line"><span class="string">春江潮水连海平，海上明月共潮生。</span> </span><br><span class="line"><span class="string">滟滟随波千万里，何处春江无月明！</span> </span><br><span class="line"><span class="string">江流宛转绕芳甸，月照花林皆似霰；</span> </span><br><span class="line"><span class="string">空里流霜不觉飞，汀上白沙看不见。</span> </span><br><span class="line"><span class="string">江天一色无纤尘，皎皎空中孤月轮。</span> </span><br><span class="line"><span class="string">江畔何人初见月？江月何年初照人？</span> </span><br><span class="line"><span class="string">人生代代无穷已，江月年年望相似。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>保存后在 <code>blog</code> 目录下打开命令行，输入 <code>hexo g - d</code>推送更新。稍等一会后打开自己的博客网址 <code>username.github.io</code>，体会一会儿张若虚的感情吧hh。</p>
-</li>
-<li><p>如果你想修改文章，只需进入该文章对应的 <code>.md</code> 文件进行修改保存，再次 <code>hexo g -d</code> 即可。</p>
-</li>
-<li><p>至此你已完成本教程目标，恭喜。</p>
-</li>
-</ol>
-<hr>
-<h1 id="未来？"><a href="#未来？" class="headerlink" title="未来？"></a>未来？</h1><ul>
-<li>现在你已经学会如何把自己的文章发表在个人博客上，尽管它还不太漂亮，但我们之后可以做更多的事来让它变得更好。这些事情包括：</li>
+<h1 id="修改链接文本为蓝色"><a href="#修改链接文本为蓝色" class="headerlink" title="修改链接文本为蓝色"></a>修改链接文本为蓝色</h1><ul>
+<li>默认的链接文本样式仅仅添加了下划线，不够醒目，在此通过添加 CSS 样式将其样式修改为蓝色 + 下划线</li>
 </ul>
 <ol>
-<li><strong>使用第三方主题</strong>。Hexo 会根据主题来生成静态页面，访问 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo 主题商店</a> 挑选一款合适的博客主题，进入其 Github 页面获取下载命令，在 <code>blog/</code> 目录下执行安装。本博客所用主题为 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a>。</li>
-<li><strong>定制主题内容</strong>。主题是影响博客外观最多的角色，阅读你的主题的官方文档，配合参考网络上各种各样的教程去修改主题配置文件、样式表文件，你几乎可以实现任何事。</li>
-<li><strong>优化文章排版</strong>。毕竟文章才是博客的核心，熟练使用 Markdown 语法吧，它真的有够简洁，多涉猎一些优秀的排版作品，学习并借鉴其好的用法。<blockquote>
-<p>例如：代码块的标记，使用反引号的麻烦要远少于使用缩进，尽管看起来它需要多敲几下键盘，缩进的坑真是谁用谁知道。</p>
+<li><p>打开 <code>\theme\next\source\css\_common\components\post\post.styl</code> 文件，添加如下代码：</p>
+ <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    color: #64CEAA; 	//原始链接颜色</span><br><span class="line">    <span class="selector-tag">border-bottom</span>: <span class="selector-tag">none</span>;</span><br><span class="line">    border-bottom: 1px solid #64CEAA;	//底部分割线颜色</span><br><span class="line">    &amp;<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">        color: #fc6423; 	//鼠标经过颜色</span><br><span class="line">        <span class="selector-tag">border-bottom</span>: <span class="selector-tag">none</span>;</span><br><span class="line">        border-bottom: 1px solid #fc6423; 	//底部分割线颜色</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果展示：<a href="https://www.baidu.com/s?ie=UTF-8&wd=%E6%8C%96%E6%8E%98%E6%9C%BA%E5%93%AA%E5%AE%B6%E5%BC%BA" target="_blank" rel="noopener">这是一个通往百度的链接</a></p>
+</li>
+</ol>
+<hr>
+<h1 id="主题色彩大一统"><a href="#主题色彩大一统" class="headerlink" title="主题色彩大一统"></a>主题色彩大一统</h1><ul>
+<li>你喜欢主题默认的黑白色吗？喜欢纯白色的网页背景吗？喜欢安卓浏览器搜索框白色与博客顶栏黑色的强对比吗？….</li>
+<li>你或许喜欢，或许不，但你随时都可以任性地更改它们。</li>
+</ul>
+<ol>
+<li><p>保持打开 <code>\themes\next\source\css\_custom\custom.styl</code> 文件，添加以下代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">// 网站背景色，建议选择浅色值以便突出展示博客内容</span><br><span class="line"> <span class="selector-tag">body</span> &#123;</span><br><span class="line">     <span class="attribute">background-color</span>:<span class="number">#E0F9F7</span> ;  </span><br><span class="line">     <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">     <span class="attribute">background-attachment</span>:fixed;</span><br><span class="line">     <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> // //博客名所在方块样式，不建议修改颜色以外的属性，除非你做好修改了一连串文件的准备</span><br><span class="line"> <span class="selector-class">.site-meta</span> &#123;</span><br><span class="line">     <span class="attribute">background</span>: <span class="number">#00CCCC</span>;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> // 修改按键（button）样式</span><br><span class="line"> <span class="selector-class">.btn</span> &#123;</span><br><span class="line">     <span class="attribute">color</span>: <span class="number">#00CCCC</span>;</span><br><span class="line">     <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">     <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#00CCCC</span>;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> // 按键（button）点击时的样式</span><br><span class="line"> <span class="selector-class">.btn</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">     <span class="attribute">border-color</span>: <span class="number">#00CCCC</span>;</span><br><span class="line">     <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">     <span class="attribute">background</span>: <span class="number">#00CCCC</span>;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> // 鼠标移动至文章标题时的效果</span><br><span class="line"> <span class="selector-class">.posts-expand</span> <span class="selector-class">.post-title-link</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">     <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">     <span class="attribute">position</span>: absolute;</span><br><span class="line">     <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">     <span class="attribute">height</span>: <span class="number">2px</span>;</span><br><span class="line">     <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">     <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">     <span class="attribute">background-color</span>: <span class="number">#00CCCC</span>;</span><br><span class="line">     <span class="attribute">visibility</span>: hidden;</span><br><span class="line">     <span class="attribute">-webkit-transform</span>: <span class="built_in">scaleX</span>(0);</span><br><span class="line">     <span class="attribute">-moz-transform</span>: <span class="built_in">scaleX</span>(0);</span><br><span class="line">     <span class="attribute">-ms-transform</span>: <span class="built_in">scaleX</span>(0);</span><br><span class="line">     <span class="attribute">-o-transform</span>: <span class="built_in">scaleX</span>(0);</span><br><span class="line">     <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(0);</span><br><span class="line">     <span class="attribute">transition-duration</span>: <span class="number">0.2s</span>;</span><br><span class="line">     <span class="attribute">transition-timing-function</span>: ease-in-out;</span><br><span class="line">     <span class="attribute">transition-delay</span>: <span class="number">0s</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>访问<a href="http://link.fobshanghai.com/rgbcolor.htm" target="_blank" rel="noopener">在线取色工具</a>选取你喜欢的颜色的色值，替换上文代码中的色值即可。</p>
+</li>
+<li><p>删去顶栏黑线。打开 <code>\themes\next\source\css\_common\components\header\headerband.styl</code> 文件，修改黑线高度为 <code>height: 0px</code>即可。</p>
+<blockquote>
+<p>为什么要删去？浏览器打开之后有4部分颜色，从上到下为：浏览器顶栏颜色、headerband 颜色、site.meta 主题色（移动端）、网页背景色：</p>
+<blockquote>
+<ol>
+<li>网页背景色与主题色往往不一样，常见状况是背景浅、主题深/亮，以突出内容；</li>
+<li>移动端浏览器顶栏默认为白色或浏览器主题的颜色，也可通过修改站点配置文件中d  <code>android_chrome_color: &quot;#00cccc&quot;</code> 和 <code>safari_rainbow: true</code> 来自定义安卓端顶栏色，或启用主题色进行苹果端着色；</li>
+<li>于是，headerband 部分就很尴尬了，头上连着不设为主题色就会在不同设备上有不同表现的浏览器顶栏，下面紧挨着 site.meta，看文章时上滑一下又去连着网页背景。都设为主题色吧，PC 端又出现那么深/亮的线横在那里吸引眼球….</li>
+<li>headerband 的目标<br>应该是一条固定的顶栏菜单，例如 Bilibili，但 next 主题对它的设计还没有到能够让一般用户轻松使用的程度。</li>
+</ol>
+</blockquote>
 </blockquote>
 </li>
 </ol>
+<hr>
+<h1 id="代码高亮、复制按钮"><a href="#代码高亮、复制按钮" class="headerlink" title="代码高亮、复制按钮"></a>代码高亮、复制按钮</h1><ul>
+<li>Markdown语法有两种方式标记大代码块，其一是用 <code>tab</code>，其二是用两个三连反引号（英文输入法下，键盘左上角的 <code>~</code>键）包裹 ：<br>  <img src="https://raw.githubusercontent.com/evensyell/img_bed/master//blog/20190526135537.png" alt></li>
+</ul>
+<ol>
+<li><p>实践发现，只有三连反引号的方式才能实现高亮效果，且必须在第一个三连反引号后面标记上代码的语言名，如上。</p>
+<blockquote>
+<p>容易被忽略的高亮语言名：<code>markdown css html  yml bash</code></p>
+</blockquote>
+</li>
+<li><p>此外，请确保站点配置文件中的如下参数是开启状态：</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span> </span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    auto_detect:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    tab_replace:</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>行内代码块的高亮使用单反引号包裹，其样式可以通过在 <code>\themes\next\source\css\_custom\custom.styl</code> 文件内添加以下代码来自定义：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">code</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ff7600</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fbf7f8</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启用主题配置文件中的一下参数来启用代码块的复制按钮：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">copy_button:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Show text copy result</span></span><br><span class="line"><span class="attr">    show_result:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果见本站（说实话不咋滴，聊胜于无）</p>
+</li>
+</ol>
+<hr>
+<h1 id="“全文结束”标识符"><a href="#“全文结束”标识符" class="headerlink" title="“全文结束”标识符"></a>“全文结束”标识符</h1><ul>
+<li>善用标签的话，该标识符能够有效提升标签的注意吸引作用，减少读者的目光游离带来的疲劳感。</li>
+</ul>
+<ol>
+<li><p>在路径 <code>\themes\next\layout_macro</code> 中新建 <code>passage-end-tag.swig</code> 文件，添加以下代码：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% if not is_index %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color:#A5A2A0;font-size:14px;"</span>&gt;</span> ———— 全文结束，感谢阅读 ————</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开 <code>\themes\next\layout_macro\post.swig</code> 文件，在如下 <code>END POST BODY</code> 后的位置添加以下代码：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;#####################&#125;</span><br><span class="line">&#123;### END POST BODY ###&#125;</span><br><span class="line">&#123;#####################&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% if not is_index %&#125;</span><br><span class="line">    &#123;% include 'passage-end-tag.swig' %&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果见本文。</p>
+</li>
+</ol>
+<hr>
+<h1 id="隐藏页尾版本主题"><a href="#隐藏页尾版本主题" class="headerlink" title="隐藏页尾版本主题"></a>隐藏页尾版本主题</h1><ul>
+<li>修改主题配置文件对应参数即可：  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">powered:</span></span><br><span class="line">    <span class="comment"># Hexo link (Powered by Hexo).</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># Version info of Hexo after Hexo link (vX.X.X).</span></span><br><span class="line"><span class="attr">    version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="attr">theme:</span></span><br><span class="line">    <span class="comment"># Theme &amp; scheme info link (Theme - NexT.scheme).</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># Version info of NexT after scheme info (vX.X.X).</span></span><br><span class="line"><span class="attr">    version:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h1 id="修改主题文字内容"><a href="#修改主题文字内容" class="headerlink" title="修改主题文字内容"></a>修改主题文字内容</h1><ul>
+<li><p>进入 <code>\themes\next\languages\zh-CN.yml</code> 文件，随心所欲进行文字替换即可，建议修改：</p>
+  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">归档</span> <span class="string">→</span> <span class="string">时间轴</span></span><br><span class="line"><span class="string">日志</span> <span class="string">→</span> <span class="string">文章</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>配合上一条使用可以得到个性化的页尾文字展示。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="特效：点击出现桃心"><a href="#特效：点击出现桃心" class="headerlink" title="特效：点击出现桃心"></a>特效：点击出现桃心</h1><ol>
+<li><p>在 <code>\themes\next \ source \ js \ src</code> 目录下创建文件 <code>clicklove.js</code>，添加以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!function(e,t,a)&#123;function n()&#123;c(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &apos;&apos;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;),o(),r()&#125;function r()&#123;for(var e=0;e&lt;d.length;e++)d[e].alpha&lt;=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText=&quot;left:&quot;+d[e].x+&quot;px;top:&quot;+d[e].y+&quot;px;opacity:&quot;+d[e].alpha+&quot;;transform:scale(&quot;+d[e].scale+&quot;,&quot;+d[e].scale+&quot;) rotate(45deg);background:&quot;+d[e].color+&quot;;z-index:99999&quot;);requestAnimationFrame(r)&#125;function o()&#123;var t=&quot;function&quot;==typeof e.onclick&amp;&amp;e.onclick;e.onclick=function(e)&#123;t&amp;&amp;t(),i(e)&#125;&#125;function i(e)&#123;var a=t.createElement(&quot;div&quot;);a.className=&quot;heart&quot;,d.push(&#123;el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()&#125;),t.body.appendChild(a)&#125;function c(e)&#123;var a=t.createElement(&quot;style&quot;);a.type=&quot;text/css&quot;;try&#123;a.appendChild(t.createTextNode(e))&#125;catch(t)&#123;a.styleSheet.cssText=e&#125;t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)&#125;function s()&#123;return&quot;rgb(&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;)&quot;&#125;var d=[];e.requestAnimationFrame=function()&#123;return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e)&#123;setTimeout(e,1e3/60)&#125;&#125;(),n()&#125;(window,document);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 <code>\theme\next\layout\_layout.swig</code> 文件内添加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 页面点击小红心 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/src/clicklove.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果见本站。</p>
+</li>
+</ol>
+<hr>
 
       
     </div>
@@ -641,7 +609,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://evensyell.github.io/posts/1678241867/" title="Hexo + Github Pages 搭建个人博客（基础篇）">https://evensyell.github.io/posts/1678241867/</a>
+    <a href="https://evensyell.github.io/posts/3871206004/" title="Hexo + Github Pages 搭建个人博客（美化篇）">https://evensyell.github.io/posts/3871206004/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -667,15 +635,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/posts/3825168618/" rel="next" title="Hexo + Github Pages 搭建个人博客（进阶篇）">
+                <i class="fa fa-chevron-left"></i> Hexo + Github Pages 搭建个人博客（进阶篇）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/3825168618/" rel="prev" title="Hexo + Github Pages 搭建个人博客（进阶篇）">
-                Hexo + Github Pages 搭建个人博客（进阶篇） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -827,7 +795,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境安装"><span class="nav-number">1.</span> <span class="nav-text">环境安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#启用-Github-Pages"><span class="nav-number">2.1.</span> <span class="nav-text">启用 Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联-Git-与-Github"><span class="nav-number">2.2.</span> <span class="nav-text">关联 Git 与 Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初尝-Hexo"><span class="nav-number">3.</span> <span class="nav-text">初尝 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定制站点信息"><span class="nav-number">4.</span> <span class="nav-text">定制站点信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#发表一篇文章"><span class="nav-number">5.</span> <span class="nav-text">发表一篇文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未来？"><span class="nav-number">6.</span> <span class="nav-text">未来？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#修改链接文本为蓝色"><span class="nav-number">1.</span> <span class="nav-text">修改链接文本为蓝色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题色彩大一统"><span class="nav-number">2.</span> <span class="nav-text">主题色彩大一统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码高亮、复制按钮"><span class="nav-number">3.</span> <span class="nav-text">代码高亮、复制按钮</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#“全文结束”标识符"><span class="nav-number">4.</span> <span class="nav-text">“全文结束”标识符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#隐藏页尾版本主题"><span class="nav-number">5.</span> <span class="nav-text">隐藏页尾版本主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改主题文字内容"><span class="nav-number">6.</span> <span class="nav-text">修改主题文字内容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特效：点击出现桃心"><span class="nav-number">7.</span> <span class="nav-text">特效：点击出现桃心</span></a></li></ol></div>
             
 
           </div>
